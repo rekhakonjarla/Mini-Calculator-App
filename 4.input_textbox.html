@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+
+#btn {
+    background-color: #fb0066;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+    </style>
+</head>
+<body>
+    <table class="calculator" >
+  <tr>
+
+    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+
+    <td> <input type="button" value="C" onmouseout="over()" id="btn" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="1" onmouseover="over()" onmouseout="out()" id="demo"/> </td>
+    <td> <input type="button" value="2" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+    <td> <input type="button" value="3" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+    <td> <input type="button" value="/" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="4" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+    <td> <input type="button" value="5" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+    <td> <input type="button" value="6" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+    <td> <input type="button" value="-" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="7" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+    <td> <input type="button" value="9" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+    <td> <input type="button" value="8" onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+    <td> <input type="button" value="+"onmouseover="over()" onmouseout="out()"id="demo"/> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="." onmouseover="over()" onmouseout="out()"id="demo" /> </td>
+    <td> <input type="button" value="0" onmouseover="over()" onmouseout="out()"id="demo" /> </td>
+ 
+
+    <td> <input type="button" value="=" onmouseover="calculate()" id="btn" /> </td>
+    <td> <input type="button" value="*" onmouseover="over()" onmouseout="out()"id="demo" /> </td>
+  </tr>
+</table>
+ 
+</body>
+<script>
+function over(){
+document.getElementById("demo").style.color="red";
+}
+function out(){
+document.getElementById("demo").style.color="black";
+}
+</script>
+</html>

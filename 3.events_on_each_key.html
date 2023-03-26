@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+
+#btn {
+    background-color: #fb0066;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+    </style>
+</head>
+<body>
+    <table class="calculator" >
+  <tr>
+
+ 
+
+    <td> <input type="button" value="C" onmouseout="clearscreen()" id="btn" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="1" onmouseover="over()" onmouseout="out()" id="demo"/> </td>
+    <td> <input type="button" value="2" onmouseover="over()" onmouseout="out()"id="demo1"/> </td>
+    <td> <input type="button" value="3" onmouseover="over()" onmouseout="out()"id="demo2"/> </td>
+    <td> <input type="button" value="/" onmouseover="over()" onmouseout="out()"id="demo3"/> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="4" onmouseover="over()" onmouseout="out()"id="demo4"/> </td>
+    <td> <input type="button" value="5" onmouseover="over()" onmouseout="out()"id="demo5"/> </td>
+    <td> <input type="button" value="6" onmouseover="over()" onmouseout="out()"id="demo6"/> </td>
+    <td> <input type="button" value="-" onmouseover="over()" onmouseout="out()"id="demo7"/> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="7" onmouseover="over()" onmouseout="out()"id="demo8"/> </td>
+    <td> <input type="button" value="9" onmouseover="over()" onmouseout="out()"id="demo9"/> </td>
+    <td> <input type="button" value="8" onmouseover="over()" onmouseout="out()"id="demo10"/> </td>
+    <td> <input type="button" value="+"onmouseover="over()" onmouseout="out()"id="demo11"/> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="." onmouseover="over()" onmouseout="out()"id="demo12" /> </td>
+    <td> <input type="button" value="0" onmouseover="over()" onmouseout="out()"id="demo13" /> </td>
+ 
+
+    <td> <input type="button" value="=" onmouseover="calculate()" id="btn" /> </td>
+    <td> <input type="button" value="*" onmouseover="over()" onmouseout="out()"id="demo14" /> </td>
+  </tr>
+</table>
+ 
+</body>
+<script>
+function over(){
+document.getElementById("demo").style.color="red";
+document.getElementById("demo1").style.color="red";
+document.getElementById("demo2").style.color="red";
+document.getElementById("demo3").style.color="red";
+document.getElementById("demo4").style.color="red";
+document.getElementById("demo5").style.color="red";
+document.getElementById("demo6").style.color="red";
+document.getElementById("demo7").style.color="red";
+document.getElementById("demo8").style.color="red";
+document.getElementById("demo9").style.color="red";
+document.getElementById("demo10").style.color="red";
+document.getElementById("demo11").style.color="red";
+document.getElementById("demo12").style.color="red";
+document.getElementById("demo13").style.color="red";
+document.getElementById("demo14").style.color="red";
+
+}
+function out(){
+document.getElementById("demo").style.color="black";
+document.getElementById("demo1").style.color="black";
+document.getElementById("demo2").style.color="black";
+document.getElementById("demo3").style.color="black";
+document.getElementById("demo4").style.color="black";
+document.getElementById("demo5").style.color="black";
+document.getElementById("demo6").style.color="black";
+document.getElementById("demo7").style.color="black";
+document.getElementById("demo8").style.color="black";
+document.getElementById("demo9").style.color="black";
+document.getElementById("demo10").style.color="black";
+document.getElementById("demo11").style.color="black";
+document.getElementById("demo12").style.color="black";
+document.getElementById("demo13").style.color="black";
+document.getElementById("demo14").style.color="black";
+}
+</script>
+</html>
